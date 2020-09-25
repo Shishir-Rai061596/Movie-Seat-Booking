@@ -23,6 +23,7 @@ const handleGetData = () => {
     const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
     if (selectedMovieIndex !== null) {
         movieSelect.selectedIndex = selectedMovieIndex
+        updateCount();
     }
 
 }
